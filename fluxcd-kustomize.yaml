@@ -4,9 +4,10 @@ metadata:
   name: hello-world-flask
 spec:
   interval: 5s
-  path: ./
+  path: ./deploy
   prune: true
   sourceRef:
     kind: GitRepository
-    name: hello-world-flask
+    name: flux-system
+    namespace: flux-system
   targetNamespace: default
